@@ -1,0 +1,43 @@
+/*
+The designs were created to the following widths:
+ Mobile: 375px
+ Desktop: 1440px
+*/
+
+:root {
+  --color-primary: hsl(187, 75%, 39%);
+  --color-primary-dark: hsl(229, 23%, 23%);
+  --color-primary-grayish: hsl(227, 10%, 46%);
+
+  --color-neutral: hsl(0, 0%, 59%);
+
+  --font-size-md: 1.8rem;
+
+  --regular: 400;
+  --bold: 700;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  /*mobile min resolution*/
+  min-width: 375px;
+  min-height: 100vh;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+img {
+  display: block;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
