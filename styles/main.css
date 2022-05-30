@@ -60,15 +60,15 @@ body {
   background-color: var(--color-primary);
   background-image:
     url("../images/bg-pattern-top.svg"),
-    url("../images/bg-pattern-top.svg");
+    url("../images/bg-pattern-bottom.svg");
 
   background-position:
-    -300px -300px,
-    110% 300px;
+    calc(100% - 55vw) calc(100% - 45vh),
+    55vw 45vh;
 
   background-size:
-    600px,
-    600px;
+    900px,
+    900px;
 
   background-repeat:
     no-repeat,
