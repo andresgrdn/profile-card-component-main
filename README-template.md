@@ -26,20 +26,12 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](./project-card-profile_.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [github.com/andresgrdn/project-code](https://andresgrdn.github.io/)
+- Live Site URL: [andresgrdn.github.io/project-page](https://github.com/andresgrdn/)
 
 ## My process
 
@@ -50,59 +42,70 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+#### -> How background positioning an image
 
-To see how you can add code snippets, see below:
+I learn to position many images using the background property, changing on my way of thinking about the position with the background-position.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+Instead of thinking with percentages for positioning the circle with respect of the origin of the image, I used the position property, thinking how much space I need from the edge of the page to the end of the image.
+
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+body {
+  /* some code... */
+
+  background-image:
+    url("../images/bg-pattern-top.svg"),
+    url("../images/bg-pattern-bottom.svg");
+
+  background-position:
+    calc(100% - 55vw) calc(100% - 45vh),
+    55vw 45vh;
+
+  background-size:
+    900px,
+    900px;
+
+  /* some code... */
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+#### -> That I need to think about the grid model items sizing
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+There are some things about sizing with the grid model that I need to deep dive. I had an issue with the grid item because no matter what configuration I use for the box container, I can't achieve to make it fit to the content. Because of the grid model That I used for center the card container.
+
+```css
+body {
+  display: grid;
+  place-content: center;
+
+  /* Some code... */
+}
+.card {
+  /* Some code... */
+  margin: 0;
+  width: 25vw;
+  min-width: 337px;
+  height: auto;
+  min-height: 355px;
+
+  /* Some code... */
+  overflow: auto;
+}
+```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I had some issues with the units beheivour when I use it with the background property.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Background docs on the MDN website](https://developer.mozilla.org/en-US/docs/Web/CSS/background) - This helped me for to understand the default values that the background property has and what I need to overwrite.
+- [CSSWG page on backgrounds](https://drafts.csswg.org/css-backgrounds/#the-background) - This page help me to understand the order of the values to modify the background image.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Website - [Andres Gordon](https://andresgrdn.github.io)
+- Frontend Mentor - [@andresgrdn](https://www.frontendmentor.io/profile/andresgrdn)
+- Twitter - [@andresgrdn](https://www.twitter.com/andresgrdn)
