@@ -14,9 +14,6 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -45,9 +42,9 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### What I learned
 
-#### -> How background positioning an image
+#### -> How positioning a background image
 
-I learn to position many images using the background property, changing on my way of thinking about the position with the background-position.
+I learn to position many images using the background property, changing my way of thinking about the position with the background-position.
 
 Instead of thinking with percentages for positioning the circle with respect of the origin of the image, I used the position property, thinking how much space I need from the edge of the page to the end of the image.
 
@@ -71,9 +68,9 @@ body {
 }
 ```
 
-#### -> That I need to think about the grid model items sizing
+#### -> I need to think about the grid model items sizing
 
-There are some things about sizing with the grid model that I need to deep dive. I had an issue with the grid item because no matter what configuration I use for the box container, I can't achieve to make it fit to the content. Because of the grid model That I used for center the card container.
+There is something about sizing with the grid model that I need to deep dive. I had an issue with the grid item because no matter what configuration I used in the item container, I can't make it fit to the content. Because of the grid model that I used for center it.
 
 ```css
 body {
