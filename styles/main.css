@@ -23,6 +23,7 @@ The designs were created to the following widths:
   box-sizing: border-box;
 }
 
+h1,
 p {
   margin: 0;
 }
@@ -126,6 +127,7 @@ body {
 .user__name {
   margin-bottom: 8px;
 
+  font-size: var(--font-size-md);
   font-weight: var(--bold);
 }
 
